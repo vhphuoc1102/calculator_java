@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="500.0" prefWidth="320.0" styleClass="main" stylesheets="@StyleStandard.css"
+            xmlns="http://javafx.com/javafx/19" fx:controller="controller.StandardInterfaceController">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="320.0" styleClass="card">
+            <children>
+                <AnchorPane prefHeight="200.0" prefWidth="320.0" styleClass="result" stylesheets="@StyleStandard.css">
+                    <children>
+                        <Label fx:id="result" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="105.0" prefHeight="73.0"
+                               prefWidth="295.0" text="0" textAlignment="RIGHT">
+                            <font>
+                                <Font size="50.0"/>
+                            </font>
+                        </Label>
+                        <Label fx:id="prev" alignment="CENTER_RIGHT" layoutX="12.0" layoutY="65.0" prefHeight="40.0"
+                               prefWidth="295.0">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" onMouseClicked="#menuDisplay" pickOnBounds="true"
+                                   preserveRatio="true" styleClass="menu">
+                            <image>
+                                <Image url="@../image/menuIcon.png"/>
+                            </image>
+                        </ImageView>
+                        <Label layoutX="215.0" text="Standard">
+                            <font>
+                                <Font size="24.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <Button layoutX="11.0" layoutY="216.0" mnemonicParsing="false" onAction="#percent" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="\%" AnchorPane.leftAnchor="11.0"/>
+                <Button layoutX="87.0" layoutY="216.0" mnemonicParsing="false" onAction="#clearEntry" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="CE"/>
+                <Button layoutX="163.0" layoutY="216.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="C"/>
+                <Button layoutX="240.0" layoutY="216.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="Del"/>
+                <Button layoutX="11.0" layoutY="262.0" mnemonicParsing="false" onAction="#inverse" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="1/x"/>
+                <Button layoutX="87.0" layoutY="262.0" mnemonicParsing="false" onAction="#square" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="sqr()"/>
+                <Button layoutX="163.0" layoutY="262.0" mnemonicParsing="false" onAction="#squareRoot" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="sqrt()"/>
+                <Button layoutX="240.0" layoutY="262.0" mnemonicParsing="false" onAction="#operateProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="+"/>
+                <Button layoutX="10.0" layoutY="308.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="7"/>
+                <Button layoutX="86.0" layoutY="308.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="8"/>
+                <Button layoutX="162.0" layoutY="308.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="9"/>
+                <Button layoutX="239.0" layoutY="308.0" mnemonicParsing="false" onAction="#operateProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="-"/>
+                <Button layoutX="11.0" layoutY="354.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="6"/>
+                <Button layoutX="87.0" layoutY="354.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="5"/>
+                <Button layoutX="163.0" layoutY="354.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="4"/>
+                <Button layoutX="240.0" layoutY="354.0" mnemonicParsing="false" onAction="#operateProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="x"/>
+                <Button layoutX="11.0" layoutY="400.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="3"/>
+                <Button layoutX="87.0" layoutY="400.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="2"/>
+                <Button layoutX="163.0" layoutY="400.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="1"/>
+                <Button layoutX="240.0" layoutY="400.0" mnemonicParsing="false" onAction="#operateProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="/"/>
+                <Button layoutX="11.0" layoutY="446.0" mnemonicParsing="false" onAction="#negative" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="+/-"/>
+                <Button layoutX="87.0" layoutY="446.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="0"/>
+                <Button layoutX="163.0" layoutY="446.0" mnemonicParsing="false" onAction="#computeProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="."/>
+                <Button layoutX="240.0" layoutY="446.0" mnemonicParsing="false" onAction="#operateProcess"
+                        prefHeight="40.0" prefWidth="70.0" styleClass="keypad" text="="/>
+                <VBox fx:id="slider" layoutX="-10.0" layoutY="48.0" prefHeight="452.0" prefWidth="167.0"
+                      styleClass="slider">
+                    <children>
+                        <JFXButton fx:id="standard" onAction="#chooseMode" prefHeight="53.0" prefWidth="189.0"
+                                   styleClass="mode" text="Standard"/>
+                        <JFXButton fx:id="converter" onAction="#chooseMode" prefHeight="53.0" prefWidth="189.0"
+                                   styleClass="mode" text="Converter"/>
+                        <JFXTextArea editable="false" prefWidth="165.0" styleClass="mode"
+                                     text="   About: &#10;   Author: Vu Hong Phuoc&#10;   Email: &#10;   phuocvu511@gmail.com&#10;   github: vhphuoc1102"/>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

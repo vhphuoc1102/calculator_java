@@ -1,0 +1,38 @@
+.main{
+    -fx-background-color: transparent;
+}
+.card{
+    -fx-background-color: #cceeff;
+
+}
+.result{
+    -fx-border-color: black transparent black transparent;
+}
+.keypad{
+    -fx-background-color: #ffffff;
+    -fx-cursor: hand;
+    -fx-border-color: black ;
+    -fx-border-width: 1 ;
+}
+.keypad:hover{
+    -fx-background-color: rgba(140, 0, 143,0.30);
+}
+.slider{
+    -fx-border-color: black black black transparent;
+    -fx-background-color: #e6f7ff;
+    -fx-background-radius: 0px 10px 10px 0px;
+    -fx-border-radius: 0px 10px 10px 0px;
+}
+.mode{
+    -fx-cursor: hand;
+    -fx-border-color: transparent transparent black black;
+}
+.mode:hover{
+    -fx-background-color: rgba(140, 0, 143,0.30);
+}
+.menu{
+    -fx-cursor: hand;
+}
+.menu:hover{
+    -fx-background-color: rgba(140, 0, 143,0.30);
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="500.0" prefWidth="320.0" styleClass="main"
+            stylesheets="@StyleConverter.css" xmlns="http://javafx.com/javafx/19"
+            fx:controller="controller.ConverterInterfaceController">
+    <children>
+        <AnchorPane prefHeight="500.0" prefWidth="320.0" styleClass="card">
+            <children>
+                <AnchorPane minHeight="-Infinity" prefHeight="249.0" prefWidth="320.0">
+                    <children>
+                        <Label layoutX="220.0" layoutY="9.0" text="Converter"
+                               AnchorPane.rightAnchor="13.333333333333329" AnchorPane.topAnchor="6.0">
+                            <font>
+                                <Font name="Calibri Bold" size="24.0"/>
+                            </font>
+                        </Label>
+                        <ImageView fx:id="menu" fitHeight="40.0" fitWidth="58.0" onMouseClicked="#menuDisplay"
+                                   pickOnBounds="true" preserveRatio="true" styleClass="menu"
+                                   AnchorPane.bottomAnchor="141.33333333333334" AnchorPane.topAnchor="0.0">
+                            <image>
+                                <Image url="@../image/menuIcon.png"/>
+                            </image>
+                        </ImageView>
+                        <Label fx:id="baseBin" layoutY="215.0" onMouseClicked="#clickOnBin" prefHeight="28.0"
+                               prefWidth="339.0" styleClass="base" text="  BIN"/>
+                        <Label fx:id="baseOct" layoutY="187.0" onMouseClicked="#clickOnOct" prefHeight="28.0"
+                               prefWidth="339.0" styleClass="base" text="  OCT"/>
+                        <Label fx:id="baseDec" layoutY="159.0" onMouseClicked="#clickOnDec" prefHeight="28.0"
+                               prefWidth="339.0" styleClass="base" text="  DEC"/>
+                        <Label fx:id="baseHex" layoutY="131.0" onMouseClicked="#clickOnHex" prefHeight="28.0"
+                               prefWidth="339.0" styleClass="base" text="  HEX "/>
+                        <Label fx:id="resHex" layoutX="49.0" layoutY="136.0" onMouseClicked="#clickOnHex"
+                               prefHeight="17.0" prefWidth="299.0" stylesheets="@StyleConverter.css" text="0"
+                               AnchorPane.rightAnchor="0.0"/>
+                        <Label fx:id="resDec" layoutX="39.0" layoutY="164.0" onMouseClicked="#clickOnDec"
+                               prefHeight="17.0" prefWidth="299.0" text="0"/>
+                        <Label fx:id="resOct" layoutX="39.0" layoutY="192.0" onMouseClicked="#clickOnOct"
+                               prefHeight="17.0" prefWidth="299.0" text="0"/>
+                        <Label fx:id="resBin" layoutX="39.0" layoutY="220.0" onMouseClicked="#clickOnBin"
+                               prefHeight="17.0" prefWidth="299.0" text="0"/>
+                        <Label fx:id="result" alignment="CENTER_RIGHT" layoutX="20.0" layoutY="55.0" prefHeight="70.0"
+                               prefWidth="299.0" styleClass="base" text="0">
+                            <font>
+                                <Font size="48.0"/>
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <Button layoutX="14.0" layoutY="450.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="0"/>
+                <Button layoutX="94.0" layoutY="450.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="A"/>
+                <Button layoutX="174.0" layoutY="450.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="B"/>
+                <Button layoutX="254.0" layoutY="450.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="C"/>
+                <Button layoutX="14.0" layoutY="400.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="1"/>
+                <Button layoutX="94.0" layoutY="400.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="2"/>
+                <Button layoutX="174.0" layoutY="400.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="3"/>
+                <Button layoutX="254.0" layoutY="400.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="D"/>
+                <Button layoutX="14.0" layoutY="350.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="4"/>
+                <Button layoutX="94.0" layoutY="350.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="5"/>
+                <Button layoutX="174.0" layoutY="350.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="6"/>
+                <Button layoutX="254.0" layoutY="350.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="E"/>
+                <Button layoutX="14.0" layoutY="300.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="7"/>
+                <Button layoutX="94.0" layoutY="300.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="8"/>
+                <Button layoutX="174.0" layoutY="300.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="9"/>
+                <Button layoutX="254.0" layoutY="300.0" mnemonicParsing="false" onAction="#number" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="F"/>
+                <Button layoutX="14.0" layoutY="250.0" mnemonicParsing="false" onAction="#clearEntry" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="CE"/>
+                <Button layoutX="94.0" layoutY="250.0" mnemonicParsing="false" onAction="#delete" prefHeight="40.0"
+                        prefWidth="70.0" styleClass="keypad" text="&lt;-"/>
+                <VBox fx:id="slider" layoutX="4.0" layoutY="45.0" prefHeight="452.0" prefWidth="179.0"
+                      styleClass="slider" AnchorPane.leftAnchor="0.0">
+                    <children>
+                        <JFXButton fx:id="standard" onAction="#chooseMode" prefHeight="53.0" prefWidth="179.0"
+                                   styleClass="mode" text="Standard"/>
+                        <JFXButton fx:id="converter" onAction="#chooseMode" prefHeight="53.0" prefWidth="179.0"
+                                   styleClass="mode" text="Converter"/>
+                        <JFXButton onAction="#chooseMode" prefHeight="53.0" prefWidth="179.0" styleClass="mode"
+                                   text="About"/>
+                    </children>
+                </VBox>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
