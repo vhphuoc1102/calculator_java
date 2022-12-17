@@ -1,4 +1,6 @@
-# calculator_java
+# Calculator
+Language: Java
+External Library: JavaFX, JFoenix
 Project I - HUST
 ## How to run the application ?
 - Run in IDE: 
