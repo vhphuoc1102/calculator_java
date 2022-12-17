@@ -1,18 +1,16 @@
 <component name="libraryTable">
   <library name="lib">
     <CLASSES>
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx.base.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx.controls.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx.fxml.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx.graphics.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx.media.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx.swing.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/javafx.web.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES>
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/src/javafx.base" />
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/src/javafx.controls" />
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/src/javafx.fxml" />
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/src/javafx.graphics" />
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/src/javafx.media" />
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/src/javafx.swing" />
-      <root url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib/src/javafx.web" />
-    </SOURCES>
-    <jarDirectory url="file://D:/Project/openjfx-19_windows-x64_bin-sdk/javafx-sdk-19/lib" recursive="false" />
+    <SOURCES />
   </library>
 </component>
