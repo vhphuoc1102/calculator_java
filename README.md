@@ -1,7 +1,7 @@
 # Calculator
-Language: Java
-External Library: JavaFX, JFoenix
-Project I - HUST
+### Project I - HUST
+### Language: Java
+### External Library: JavaFX, JFoenix
 ## How to run the application ?
 - Run in IDE: 
   + You first need clone the code. 
